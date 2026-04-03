@@ -17,9 +17,21 @@
     a { color: #0366d6; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* Панелі з шильдиками */
-    .badges { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
-    .badge { display: inline-block; }
+    /* Панелі шильдиків */
+    .badges {
+      display: flex;
+      justify-content: center; /* вирівнювання по горизонталі */
+      align-items: center;     /* вирівнювання по вертикалі */
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      height: 28px;           /* однакова висота для всіх шильдиків */
+      object-fit: contain;     /* зберігає пропорції шильдика */
+    }
 
     /* Відео */
     iframe { display: block; margin: 20px auto; width: 100%; max-width: 560px; height: 315px; }
