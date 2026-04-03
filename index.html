@@ -14,10 +14,19 @@
     .center { text-align: center; }
     ul { list-style-type: none; padding-left: 0; }
     ul li { margin-bottom: 10px; }
-    .badge { margin: 5px; }
     a { color: #0366d6; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    iframe { display: block; margin: 20px auto; max-width: 100%; height: auto; }
+
+    /* Панелі з шильдиками */
+    .badges { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+    .badge { display: inline-block; }
+
+    /* Відео */
+    iframe { display: block; margin: 20px auto; width: 100%; max-width: 560px; height: 315px; }
+
+    /* Кнопка приєднання до Discord */
+    .discord-btn { display: inline-block; padding: 12px 24px; background: #5865F2; color: white; font-weight: bold; border-radius: 8px; text-decoration: none; transition: 0.3s; }
+    .discord-btn:hover { background: #4752c4; }
   </style>
 </head>
 <body>
@@ -25,7 +34,8 @@
 <h1>🟦🟨 Where Winds Meet | UA — українська гільдія 🟨🟦</h1>
 <h3>Greatness — одна з найбільших українських гільдій</h3>
 
-<div class="center">
+<!-- Панелі -->
+<div class="badges">
   <a href="https://discord.gg/B3jzsUFMYZ"><img class="badge" src="https://img.shields.io/badge/Discord-Join-blue?style=for-the-badge&logo=discord" alt="Discord"></a>
   <img class="badge" src="https://img.shields.io/badge/PvP-PvE-yellow?style=for-the-badge" alt="PvP/PvE">
   <img class="badge" src="https://img.shields.io/badge/Members-90%2B-success?style=for-the-badge" alt="Members">
@@ -38,7 +48,7 @@
 <p>Ми створюємо комфортне, позитивне й дружнє оточення, де кожен отримує максимум задоволення від гри. Ми лідируємо в <strong>Гільдійній Лізі</strong> в <strong>Guild Wars</strong>. В гільдії понад <strong>90+ активних учасників</strong>. Регулярно проводимо івенти, вчимо новачків, підтримуємо контент-креаторів та маємо великий і активний Discord!</p>
 
 <p><strong>Guild ID WWM:</strong> 10024154</p>
-<p><strong>Наш Discord:</strong> <a href="https://discord.gg/B3jzsUFMYZ">Приєднатися</a></p>
+<p><strong>Наш Discord:</strong> <a href="https://discord.gg/B3jzsUFMYZ">https://discord.gg/B3jzsUFMYZ</a></p>
 
 <img src="https://i.postimg.cc/ZqSzzftb/Reklama1.png" alt="screenshot">
 
@@ -46,8 +56,9 @@
 
 <h2>🎬 Запрошуємо до себе</h2>
 
+<!-- Відео -->
 <div class="center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/PfFDQ-34y-U" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/PfFDQ-34y-U" title="YouTube video" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <h2>🔥 Що ти отримаєш з нами</h2>
@@ -65,7 +76,7 @@
 <div class="center">
 <h2>🟦🟨 Where Winds Meet | Greatness 🟨🟦</h2>
 <p>⚡ Готовий грати з топами? Стань частиною одного з найбільших українських ком'юніті. Комфортне, позитивне й дружнє оточення, де кожен отримує максимум задоволення від гри. 🤝</p>
-<p><a href="https://discord.gg/B3jzsUFMYZ">👉 Приєднатися до Discord</a></p>
+<a class="discord-btn" href="https://discord.gg/B3jzsUFMYZ">👉 Приєднатися до Discord</a>
 </div>
 
 <img src="https://i.postimg.cc/mZ1DRgtJ/Reklama2.png" alt="screenshot">
